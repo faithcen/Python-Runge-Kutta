@@ -26,5 +26,5 @@ incerement for for the independent variable from xs to xf
 
 <b>ord</b>: <b><i>{1, 4, 5, 6}, optional</i></b> 
 
-Runge-Kutta Order. Default is {4}
+Runge-Kutta Order. Default is 4
 
