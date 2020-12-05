@@ -1,4 +1,4 @@
-# Python-Runge-Kutta
+# Python-Runge-Kutta (Beta Version)
 This repository contains a Time saving Runge-Kutta ODE Solver in Python.
 This ODE solver allows one to solve multiple ODEs by selecting different Runge-Kutta orders.
 
