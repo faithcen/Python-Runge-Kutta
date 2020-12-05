@@ -58,7 +58,7 @@ class RK_ODE_Solver(Coefficients):
         self.__n = round((xf-xs)/dx)
         self.dx = (xf-xs)/self.__n
         self.y = array(y)
-
+        
 
         for i in range(self.__n):
             self.__yconst = self.y
