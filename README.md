@@ -12,19 +12,19 @@ The dependent function(s).
 
 The model function, ode(y, x=None) It must take the independent variable as the first argument.
 
-<b>xs</b>: <b>float</b>
+<b>xs</b>: <b><i>float</i></b>
 
 The starting point or initial vaue of the independent variable.
 
-<b>xf</b>: <b>float</b>
+<b>xf</b>: <b><i>float</i></b>
 
 The final point (value) of the independent variable.
 
-<b>dx</b>: <b>float</b>
+<b>dx</b>: <b><i>float</i></b>
 
 incerement for for the independent variable from xs to xf
 
-<b>ord</b>: <b>{1, 4, 5, 6}, optional</b> 
+<b>ord</b>: <b><i>{1, 4, 5, 6}, optional</i></b> 
 
 Runge-Kutta Order. Default is {4}
 
