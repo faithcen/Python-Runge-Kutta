@@ -2,7 +2,7 @@
 This repository contains a Time saving Runge-Kutta ODE Solver in Python.
 This ODE solver allows one to solve multiple ODEs by selecting different Runge-Kutta orders.
 
-RK_ODE_Solver() class object contains calc(y, ode, xs, xf, dx, ord=4) method object that conducts the calculation.
+RK_ODE_Solver() class object contains calc(y, ode, xs, xf, dx, ord) method object that conducts the calculation.
 ### Parameters:
 <b>y</b>: <b><i> array_like </i></b> 
 
