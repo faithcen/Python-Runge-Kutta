@@ -67,9 +67,6 @@ class RK_ODE_Solver(Coefficients):
                 self.y = self.__yconst+self.alf[j]*self.dx*self.__dy_dx
         return self.y
 
-    def __str__(self):
-        return "Equations:\n  y1(t) = t\n  y2(t) = e^t\n\n(ODEs), dy/dt-->f:\n f(0)=1\n f(1)=e^t\nInitial Conditions:"\
-               "\n y(0)=0\n y(1)=1\n\n"
 
 
 if __name__ == '__main__':
