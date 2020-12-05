@@ -1,0 +1,49 @@
+
+
+
+
+if __name__ == '__main__':
+
+    '''
+    Example
+    
+    Equations:
+    y1(t) = t
+    y2(t) = e^t
+    
+    ODEs:
+    dy1/dt = 1
+    dy2/dt = e^t
+    
+    Initial Cond:
+    at t=0
+    y1(0) = 0
+    y2(0) = 1
+    
+    at t=2
+    y1(2) = ??
+    y2(2) = ??
+    '''
+
+
+    def ode(y, x=None):
+        '''
+        y(1) = t --> dy / dt = 1
+        y(2) = e ^ t --> dy / dt = e ^ t
+        '''
+        # f: dy/dx
+        f = [None]*2
+        f[0] = 1.0
+        f[1] = exp(y[0])
+        f = [f[0], f[1]]
+        return f
+
+    xs = 0 # --> t = 0
+    xf = 2 # --> t = 2
+    dx = 0.01 # --> increment for t
+    y = [0, 1] # ---> initial conditions
+
+
+    cons = RK_ODE_Solver()
+
+    print(list(cons.calc(y, ode, xs, xf, dx)))
