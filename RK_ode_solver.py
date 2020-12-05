@@ -72,6 +72,8 @@ class RK_ODE_Solver(Coefficients):
 if __name__ == '__main__':
 
     '''
+    Example
+    
     Equations:
     y1(t) = t
     y2(t) = e^t
@@ -81,10 +83,11 @@ if __name__ == '__main__':
     dy2/dt = e^t
     
     Initial Cond:
-    t=0 için
+    at t=0
     y1(0) = 0
     y2(0) = 1
     
+    at t=2
     y1(2) = ??
     y2(2) = ??
     '''
@@ -102,10 +105,10 @@ if __name__ == '__main__':
         f = [f[0], f[1]]
         return f
 
-    xs = 0 # --> t için başlangıç değeri
-    xf = 2 # --> t için bitiş değeri
-    dx = 0.01 # --> artış miktarı
-    y = [0, 1] # ---> y için inital guess
+    xs = 0 # --> t = 0
+    xf = 2 # --> t = 2
+    dx = 0.01 # --> increment for t
+    y = [0, 1] # ---> initial conditions
 
 
     cons = RK_ODE_Solver()
